@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,13 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --font-display: 'Roboto Slab', var(--font-fallback-sans);
+  --font-text: 'Vollkorn', var(--font-fallback-serif);
+  --font-mono: 'Roboto Mono', var(--font-fallback-mono);
+  --font-fallback-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  --font-fallback-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol ;
+  --font-fallback-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
