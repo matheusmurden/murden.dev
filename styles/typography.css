@@ -29,3 +29,19 @@
 	font-weight: 100 900;
   font-style: italic;
 }
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../assets/RobotoMono.woff2') format('woff2'),
+       url('../assets/RobotoMono.ttf') format('ttf');
+	font-weight: 100 700;
+  font-style: normal;
+}
+
+:root {
+  --fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --mono-fallback: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  --heading: 'IBM Plex', var(--fallback);
+  --text: 'Vollkorn', var(--fallback);
+  --mono: 'Roboto Mono', var(--mono-fallback);
+}

@@ -1,0 +1,18 @@
+@import 'typography';
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--fallback);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
