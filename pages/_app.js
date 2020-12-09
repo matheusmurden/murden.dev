@@ -1,4 +1,6 @@
-import 'styles/globals.css'
+import 'styles/resets.css'
+import 'styles/typography.css'
+
 import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {

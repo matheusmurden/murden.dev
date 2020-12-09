@@ -39,7 +39,6 @@
 }
 
 .title a {
-  font-family: var(--heading);
   color: #0070f3;
   text-decoration: none;
 }

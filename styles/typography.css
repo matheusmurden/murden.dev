@@ -4,6 +4,7 @@
        url('../assets/IBMPlex.ttf') format('ttf');
 	font-weight: 100 700;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
        url('../assets/IBMPlex-Italic.ttf') format('ttf');
 	font-weight: 100 700;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
        url('../assets/Vollkorn.ttf') format('ttf');
 	font-weight: 100 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
        url('../assets/Vollkorn-Italic.ttf') format('ttf');
 	font-weight: 100 900;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -36,12 +40,43 @@
        url('../assets/RobotoMono.ttf') format('ttf');
 	font-weight: 100 700;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
   --fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --mono-fallback: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-  --heading: 'IBM Plex', var(--fallback);
+  --display: 'IBM Plex', var(--fallback);
   --text: 'Vollkorn', var(--fallback);
   --mono: 'Roboto Mono', var(--mono-fallback);
+}
+
+html, body, main, section, aside, article {
+  font-family: var(--text);
+  transition: all .2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--display);
+  transition: all .2s ease;
+}
+
+dl, dt {
+  font-family: var(--display);
+  transition: all .2s ease;
+}
+
+dd {
+  font-family: var(--text);
+  transition: all .2s ease;
+}
+
+code, pre {
+  font-family: var(--mono);
+  transition: all .2s ease;
+}
+
+p, span, a, blockquote, q, br, hr, mark, ins, del, sup, sub, small, i, em, b, strong, figcaption, caption {
+  font-family: inherit;
+  transition: all .2s ease;
 }
