@@ -11,15 +11,6 @@ ol[class] {
   padding: 0;
 }
 
-a, a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:hover, a:focus, a:focus-visible, a:active {
-  text-decoration: underline;
-}
-
 /* Remove default margin */
 body,
 h1,
@@ -47,9 +38,14 @@ body {
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
-a:not([class]) {
+a, a:visited {
   text-decoration-skip-ink: auto;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:focus-visible, a:active {
+  text-decoration: underline;
 }
 
 /* Make images easier to work with */
@@ -62,7 +58,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: inherit;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
