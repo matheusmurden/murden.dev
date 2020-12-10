@@ -1,0 +1,33 @@
+:root {
+  --mono-fallback: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  --display: 'IBM Plex', system-ui;
+  --text: 'Vollkorn', system-ui;
+  --mono: 'Roboto Mono', var(--mono-fallback);
+  --text-color: #202020;
+  --bg-color: #f9f9f9;
+
+  --font-xxlight: 100;
+  --font-xlight: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-xbold: 800;
+  --font-xxbold: 900;
+
+  @media (prefers-color-scheme: dark) {
+    --text-color: #f9f9f9;
+    --bg-color: #202020;
+
+    --font-xxlight: 100;
+    --font-xlight: 150;
+    --font-light: 250;
+    --font-regular: 350;
+    --font-medium: 450;
+    --font-semibold: 550;
+    --font-bold: 650;
+    --font-xbold: 750;
+    --font-xxbold: 850;
+  }
+}
