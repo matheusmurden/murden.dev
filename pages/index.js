@@ -1,15 +1,9 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import styles from 'styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -58,7 +52,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <Image height="16" width="71" src="/vercel.svg" alt="Vercel Logo"/>
+          <Image height="16" width="71" src="/images/vercel.svg" alt="Vercel Logo"/>
         </a>
       </footer>
     </div>

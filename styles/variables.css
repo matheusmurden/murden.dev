@@ -1,0 +1,6 @@
+:root {
+  --mono-fallback: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+  --display: 'IBM Plex', system-ui;
+  --text: 'Vollkorn', system-ui;
+  --mono: 'Roboto Mono', var(--mono-fallback);
+}

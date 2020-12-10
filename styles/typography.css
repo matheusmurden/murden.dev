@@ -43,19 +43,11 @@
   font-display: swap;
 }
 
-:root {
-  --fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --mono-fallback: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-  --display: 'IBM Plex', var(--fallback);
-  --text: 'Vollkorn', var(--fallback);
-  --mono: 'Roboto Mono', var(--mono-fallback);
-}
-
 html, body, main, section, aside, article {
   font-family: var(--text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+:--headings {
   font-family: var(--display);
 }
 
