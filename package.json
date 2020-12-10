@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "capsize": "^1.1.0",
+    "framer-motion": "^2.9.5",
     "next": "^10.0.3",
     "next-pwa": "^5.0.0",
     "react": "^17.0.1",

@@ -1,1 +1,107 @@
-if(!self.define){const e=e=>{"require"!==e&&(e+=".js");let i=Promise.resolve();return a[e]||(i=new Promise(async i=>{if("document"in self){const a=document.createElement("script");a.src=e,document.head.appendChild(a),a.onload=i}else importScripts(e),i()})),i.then(()=>{if(!a[e])throw new Error(`Module ${e} didn’t register its module`);return a[e]})},i=(i,a)=>{Promise.all(i.map(e)).then(e=>a(1===e.length?e[0]:e))},a={require:Promise.resolve(i)};self.define=(i,s,r)=>{a[i]||(a[i]=Promise.resolve().then(()=>{let a={};const t={uri:location.origin+i.slice(1)};return Promise.all(s.map(i=>{switch(i){case"exports":return a;case"module":return t;default:return e(i)}})).then(e=>{const i=r(...e);return a.default||(a.default=i),a})}))}}define("./sw.js",["./workbox-8778d57b"],(function(e){"use strict";importScripts(),self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"/_next/static/W2ziQmyzQik4Fw5lira_5/_buildManifest.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/W2ziQmyzQik4Fw5lira_5/_ssgManifest.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/f6078781a05fe1bcb0902d23dbbb2662c8d200b3.eab05be1054cb8f72968.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/framework.cdbdac0a36200f52203c.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/main-eabc1fd899993c1a3ece.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/pages/_app-a9f7e7c50edc64526812.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/pages/_error-2f1aa3a9bb2617b26c5a.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/pages/index-7c91214174693dc4a560.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/polyfills-36bde18dcfde0c144be5.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/chunks/webpack-e067438c4cf4ef2ef178.js",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/css/7a4c2bc1c2a1d7e22542.css",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/css/8ea4f058cb8bb3aef541.css",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/IBMPlex-Italic.21f9399dc7d4e9353c4cebcbff8bb29f.ttf",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/IBMPlex-Italic.df26a8aea035eb42dba1a156adff1fdd.woff2",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/IBMPlex.219d49f33995a04034483a0d5bf8f1fc.ttf",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/IBMPlex.48d3454abc00e7e66effe4165923d578.woff2",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/RobotoMono.2ccde177314ac34f20b84a90c124715c.ttf",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/RobotoMono.b068a62fe12a4345ee21c6d10438638d.woff2",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/Vollkorn-Italic.cda604d52573b3bcc7ada918b4158fa1.woff2",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/Vollkorn-Italic.d07c5f7a4d51a64d562e644f9f25494a.ttf",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/Vollkorn.532d83a0638e9be68c4c2f8c3074b186.woff2",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/_next/static/media/Vollkorn.d1756281fea0290b24ff7058020d8c80.ttf",revision:"W2ziQmyzQik4Fw5lira_5"},{url:"/icons/favicon.ico",revision:"21b739d43fcb9bbb83d8541fe4fe88fa"},{url:"/images/vercel.svg",revision:"4b4f1876502eb6721764637fe5c41702"},{url:"/manifest.json",revision:"da1006478e90ba25bc9a745d6776a7d3"}],{ignoreURLParametersMatching:[]}),e.cleanupOutdatedCaches(),e.registerRoute("/",new e.NetworkFirst({cacheName:"start-url",plugins:[new e.ExpirationPlugin({maxEntries:1,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/^https:\/\/fonts\.(?:googleapis|gstatic)\.com\/.*/i,new e.CacheFirst({cacheName:"google-fonts",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:31536e3,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:eot|otf|ttc|ttf|woff|woff2|font.css)$/i,new e.StaleWhileRevalidate({cacheName:"static-font-assets",plugins:[new e.ExpirationPlugin({maxEntries:4,maxAgeSeconds:604800,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:jpg|jpeg|gif|png|svg|ico|webp)$/i,new e.StaleWhileRevalidate({cacheName:"static-image-assets",plugins:[new e.ExpirationPlugin({maxEntries:64,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:js)$/i,new e.StaleWhileRevalidate({cacheName:"static-js-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:css|less)$/i,new e.StaleWhileRevalidate({cacheName:"static-style-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\.(?:json|xml|csv)$/i,new e.NetworkFirst({cacheName:"static-data-assets",plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/\/api\/.*$/i,new e.NetworkFirst({cacheName:"apis",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:16,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET"),e.registerRoute(/.*/i,new e.NetworkFirst({cacheName:"others",networkTimeoutSeconds:10,plugins:[new e.ExpirationPlugin({maxEntries:32,maxAgeSeconds:86400,purgeOnQuotaError:!0})]}),"GET")}));
+/**
+ * Copyright 2018 Google Inc. All Rights Reserved.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// If the loader is already loaded, just stop.
+if (!self.define) {
+  const singleRequire = name => {
+    if (name !== 'require') {
+      name = name + '.js';
+    }
+    let promise = Promise.resolve();
+    if (!registry[name]) {
+      
+        promise = new Promise(async resolve => {
+          if ("document" in self) {
+            const script = document.createElement("script");
+            script.src = name;
+            document.head.appendChild(script);
+            script.onload = resolve;
+          } else {
+            importScripts(name);
+            resolve();
+          }
+        });
+      
+    }
+    return promise.then(() => {
+      if (!registry[name]) {
+        throw new Error(`Module ${name} didn’t register its module`);
+      }
+      return registry[name];
+    });
+  };
+
+  const require = (names, resolve) => {
+    Promise.all(names.map(singleRequire))
+      .then(modules => resolve(modules.length === 1 ? modules[0] : modules));
+  };
+  
+  const registry = {
+    require: Promise.resolve(require)
+  };
+
+  self.define = (moduleName, depsNames, factory) => {
+    if (registry[moduleName]) {
+      // Module is already loading or loaded.
+      return;
+    }
+    registry[moduleName] = Promise.resolve().then(() => {
+      let exports = {};
+      const module = {
+        uri: location.origin + moduleName.slice(1)
+      };
+      return Promise.all(
+        depsNames.map(depName => {
+          switch(depName) {
+            case "exports":
+              return exports;
+            case "module":
+              return module;
+            default:
+              return singleRequire(depName);
+          }
+        })
+      ).then(deps => {
+        const facValue = factory(...deps);
+        if(!exports.default) {
+          exports.default = facValue;
+        }
+        return exports;
+      });
+    });
+  };
+}
+define("./sw.js",['./workbox-32092201'], function (workbox) { 'use strict';
+
+  /**
+  * Welcome to your Workbox-powered service worker!
+  *
+  * You'll need to register this file in your web app.
+  * See https://goo.gl/nhQhGp
+  *
+  * The rest of the code is auto-generated. Please don't update this file
+  * directly; instead, make changes to your Workbox build configuration
+  * and re-run your build process.
+  * See https://goo.gl/2aRDsh
+  */
+
+  importScripts();
+  self.skipWaiting();
+  workbox.clientsClaim();
+  workbox.registerRoute(/.*/i, new workbox.NetworkOnly({
+    "cacheName": "dev",
+    plugins: []
+  }), 'GET');
+
+});
+//# sourceMappingURL=sw.js.map

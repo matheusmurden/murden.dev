@@ -49,6 +49,7 @@ html, body, main, section, aside, article {
 
 :--headings {
   font-family: var(--display);
+  transition: all .2s ease;
 }
 
 dl, dt {
@@ -61,40 +62,73 @@ dd {
 
 code, pre {
   font-family: var(--mono);
+  transition: all .2s ease;
 }
 
-p, span, a, blockquote, q, br, hr, mark, ins, del, sup, sub, small, i, em, b, strong, figcaption, caption {
+p, span, blockquote, q, br, hr, mark, ins, del, sup, sub, small, i, em, b, strong, figcaption, caption {
   font-family: inherit;
+  transition: all .2s ease;
 }
 
-.thin {
-  font-weight: 100;
+p {
+  margin-bottom: 1rem;
 }
 
-.xlight {
-  font-weight: 200;
+article p {
+  margin-bottom: 3rem;
 }
 
-.light {
-  font-weight: 300;
+h1 {
+  margin-bottom: 2.5rem;
+  font-weight: var(--font-medium);
 }
 
-.regular {
-  font-weight: 400;
+h1:hover {
+  font-weight: var(--font-xbold);
 }
 
-.medium {
-  font-weight: 500;
+h2 {
+  margin-bottom: 2rem;
 }
 
-.semibold {
-  font-weight: 600;
+h3 {
+  margin-bottom: 1.66rem;
 }
 
-.bold {
-  font-weight: 700;
+h4 {
+  margin-bottom: 1.33rem;
 }
 
-.xbold {
-  font-weight: 900;
+h5 {
+  margin-bottom: 1.15rem;
+}
+
+h6 {
+  margin-bottom: 1rem;
+}
+
+article {
+  h1 {
+    margin: 2.5rem auto;
+  }
+
+  h2 {
+    margin: 2rem auto;
+  }
+
+  h3 {
+    margin: 1.66rem auto;
+  }
+
+  h4 {
+    margin: 1.33rem auto;
+  }
+
+  h5 {
+    margin: 1.15rem auto;
+  }
+
+  h6 {
+    margin: 1rem auto;
+  }
 }
