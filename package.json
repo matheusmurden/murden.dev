@@ -16,8 +16,8 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "postcss-custom-selectors": "^5.1.2",
+    "postcss-custom-selectors": "^6.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^6.7.0"
+    "postcss-preset-env": "^5.3.0"
   }
 }
